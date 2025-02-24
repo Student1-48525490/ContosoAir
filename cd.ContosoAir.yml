@@ -16,7 +16,6 @@ resources:
        - master
 pool:
   name: default
-  vmImage: ubuntu-latest
 
 steps:
 - task: DownloadBuildArtifacts@1
