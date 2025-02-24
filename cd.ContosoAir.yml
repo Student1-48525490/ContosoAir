@@ -26,7 +26,7 @@ steps:
     pipeline: '3'
     buildVersionToDownload: 'latest'
     downloadType: 'single'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    downloadPath: '$(Pipeline.Workspace)'
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
