@@ -35,8 +35,8 @@ steps:
     resourceGroupName: '$(resourcegroup)'
     location: 'East US'
     templateLocation: 'Linked artifact'
-    csmFile: '$(Pipeline.Workspace)/drop/Templates/azuredeploy.json'
-    csmParametersFile: '$(Pipeline.Workspace)/drop/Templates/azuredeploy.parameters.json'
+    csmFile: '$(Pipeline.Workspace)/Templates/azuredeploy.json'
+    csmParametersFile: '$(Pipeline.Workspace)/Templates/azuredeploy.parameters.json'
     overrideParameters: '-p_environment $(web_environment) -p_site_prefix $(web_prefix) -p_site_web_name $(web_site)'
     deploymentMode: 'Incremental'
 - task: AzureRmWebAppDeployment@5
